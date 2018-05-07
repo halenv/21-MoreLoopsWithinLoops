@@ -337,14 +337,11 @@ def numbers_constant_backwards(r, maxnum, n):
     #   defeat the goal of providing practice at loops within loops.
     # ------------------------------------------------------------------
 
-    num = maxnum
     for k in range(r):
-        for j in range(maxnum):
+        for j in range(maxnum, 0, -1):
             for i in range(n):
-                print(num, end='')
+                print(j, end='')
             print(end=' ')
-
-            num = num - 1
 
         print()
 
