@@ -142,6 +142,27 @@ def triangle_upside_down(r):
     #   defeat the goal of providing practice at loops within loops.
     # ------------------------------------------------------------------
 
+    # count = 1
+    # spaces = r
+    # for k in range(r):
+    #     for j in range(spaces):
+    #         print(' ', end='')
+    #     for j in range(count):
+    #         print("*", end='')
+    #     spaces = spaces - 1
+    #     count = count + 1
+    #
+    #     print()
+
+    count = r
+    for k in range(r):
+        for j in range(k + 1):
+            print(' ', end='')
+        for j in range(count):
+            print(j + 1, end='')
+        count = count - 1
+
+        print()
 
 def run_test_vee():
     """ Tests the    vee    function. """
